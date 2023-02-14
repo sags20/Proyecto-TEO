@@ -1,0 +1,17 @@
+
+const
+var
+funcion
+mientras (WHILE)
+si (IF)
+sino (ELSE)
+girarIzquierda
+parar
+avanzar
+retroceder
+apagate
+comprobarColor
+comprobarParedArriba
+comprobarParedAtras
+comprobarParedDerecha
+comprobarParedIzquierda
