@@ -1,0 +1,31 @@
+EJEMPLO DE PROGRAMA 1 
+//Ejemplo para que cuando cuente 4 colores azules gire 2 veces
+//Sino al encontrar 4 colores rojos gira 1 vez
+--------------------------------------------------------------------------------
+const pi = 3.1416;
+var rojos = 0;
+var azules = 0;
+var run = true;
+funcion contandoColores(){
+  mientras(run){
+    avanzar(100);
+    si(comprobarColor() == 1){
+      azules = azules + 1;
+    }sino si(comprobarColor() == 2){
+      rojos = rojos + 1;
+    }
+    si(azules > pi){
+      girarIzquierda(8);//dos vueltas 360°
+      run = false;
+    }sino si(rojos > pi){
+      girarIzquierda(4);//una vueltas 360°
+      run = false;
+    }
+  }
+  apagate();
+}
+contandoColores();
+//Fin programa 1
+
+
+

@@ -1,0 +1,31 @@
+EJEMPLO DE PROGRAMA 2 
+//Ejemplo de karel
+//En este ejemplo no definimos constantes
+//cuando es false es LIBRE y si es true HAY UNA PARED
+--------------------------------------------------------------------------------
+var run = true;
+funcion  ResolverLaberinto() {
+  mientras (run) {
+    si(comprobarParedArriba()){
+      si(comprobarParedIzquierda()){
+        si(comprobarParedAtras()){
+          si(comprobarParedDerecha()){
+            apagate();
+          }sino{
+            invertir()
+            girarIzquierda(1)
+            avanzar(100)
+          }
+        }sino{
+          invertir()
+        avanzar(100)
+        }
+      }sino{
+        girarIzquierda(1)
+        avanzar(100)
+      }
+    }sino{
+      avanzar(100)
+    }
+  }
+}
